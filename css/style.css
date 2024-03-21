@@ -33,6 +33,7 @@ a {
 
 img {
   width: 100%;
+
 }
 
 
@@ -248,7 +249,7 @@ h5 {
 }
 
 .homepage .game-container .pic {
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -346,10 +347,21 @@ p {
 }
 
 
+@media(min-width: 0px) {
+    .QR {
+    width:0px;
+    height:0px;
+    }
+}
+
 @media(min-width: 375px) {
     .homepage .game {
         width:175px;
         padding: 5px;
+    }
+    .QR {
+    width:0px;
+    height:0px;
     }
 }
 
@@ -358,12 +370,20 @@ p {
         width:215px
 
     }
+    .QR {
+    width:100px;
+    height:150px;
+    }
 }
 
 @media(min-width: 768px) {
     .homepage .game {
         width:246px
 
+    }
+    .QR {
+    width:120px;
+    height:180px;
     }
 }
 
@@ -372,6 +392,10 @@ p {
         width:240px
 
     }
+    .QR {
+    width:120px;
+    height:180px;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -379,7 +403,16 @@ p {
         width:222px
 
     }
+    .QR {
+    width:150px;
+    height:225px;
+    }
 }
 
-
+.QR {
+  position: fixed;
+  right: 10px;
+  bottom: 120px;
+  z-index: 200;
+}
 
